@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>247 around</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script>
+  function message()
+  {
+    alert("Welcome "+document.getElementsByName('name')[0].value);
+  }
+  </script>
+</head>
+<body>
+<b>
+<div class="container">
+
+<img class="logo" src="logo.png" width="400" height="120" >
+  <form role="form" action="form.html" method="request" onsubmit="return message()">
+    <div class="form-group ">
+      Name:
+      <input type="text" class="form-control" name="name" placeholder="Enter name" required>
+    </div>
+    <div class="form-group ">
+      Mobile :
+      <input type="text" pattern="[789][0-9]{9}" class="form-control" name="mobile" placeholder="Enter mobile no." required>
+    </div>
+    
+    <div class="form-group ">
+      Email:
+      <input type="email" class="form-control" name="email" placeholder="Enter email" required>
+    </div>
+    <div class="checkbox">
+      <input type="checkbox" class="form-group">Remember me
+    </div>
+    <button type="submit" class="form-control btn btn-success">Submit</button>
+  </form>
+</div>
+</b>
+</body>
+</html>
